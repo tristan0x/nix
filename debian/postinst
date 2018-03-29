@@ -22,6 +22,7 @@ case "$1" in
     configure)
         mkdir -p /nix/var/nix/gcroots/per-user
         mkdir -p /nix/var/nix/profiles/per-user
+        mkdir -p /nix/var/nix/profiles/per-user/root/channels
         chmod u=rwx,g=rwx,o=rwxt /nix/var/nix/gcroots/per-user
         chmod u=rwx,g=rwx,o=rwxt /nix/var/nix/profiles/per-user
     ;;

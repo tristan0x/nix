@@ -1,0 +1,26 @@
+diff --git a/scripts/nix-profile-daemon.sh.in b/scripts/nix-profile-daemon.sh.in
+index 45e4f592..c59fe82b 100644
+--- a/scripts/nix-profile-daemon.sh.in
++++ b/scripts/nix-profile-daemon.sh.in
+@@ -29,7 +29,7 @@ if test -w $HOME; then
+ 
+   # Subscribe the root user to the NixOS channel by default.
+   if [ "$USER" = root -a ! -e $HOME/.nix-channels ]; then
+-      echo "https://nixos.org/channels/nixpkgs-unstable nixpkgs" > $HOME/.nix-channels
++      echo "https://bbpobjectstorage.epfl.ch/nix-channel nixpkgs" > $HOME/.nix-channels
+   fi
+ 
+   # Create the per-user garbage collector roots directory.
+diff --git a/scripts/nix-profile.sh.in b/scripts/nix-profile.sh.in
+index 6a0acc04..97ba7193 100644
+--- a/scripts/nix-profile.sh.in
++++ b/scripts/nix-profile.sh.in
+@@ -12,7 +12,7 @@ if [ -n "$HOME" ]; then
+ 
+     # Subscribe the user to the Nixpkgs channel by default.
+     if [ ! -e $HOME/.nix-channels ]; then
+-        echo "https://nixos.org/channels/nixpkgs-unstable nixpkgs" > $HOME/.nix-channels
++        echo "https://bbpobjectstorage.epfl.ch/nix-channel nixpkgs" > $HOME/.nix-channels
+     fi
+ 
+     # Append ~/.nix-defexpr/channels/nixpkgs to $NIX_PATH so that
