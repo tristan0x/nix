@@ -8,7 +8,7 @@ fi
 TARGET_USER="$1"
 TARGET_HOME=$(su -lc "cd; pwd" "$TARGET_USER")
 SYMLINK_PATH="$TARGET_HOME/.nix-profile"
-PROFILE_DIR="/var/nix/profiles/per-user/$TARGET_USER"
+PROFILE_DIR="/nix/var/nix/profiles/per-user/$TARGET_USER"
 
 echo "Creating profile $PROFILE_DIR..."
 echo "Profile symlink: $SYMLINK_PATH"

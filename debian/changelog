@@ -1,3 +1,9 @@
+nix (1.11.16) xenial; urgency=medium
+
+  * Bump to version 1.11.16
+
+ -- Tristan Carel <tristan.carel@gmail.com>  Fri, 09 Feb 2018 11:11:27 +0100
+
 nix (1.11.15-0jbboehr2) xenial; urgency=medium
 
   * Socket should be in /var/nix not /nix/var/nix

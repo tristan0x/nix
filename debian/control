@@ -44,6 +44,9 @@ Depends:
 	${shlibs:Depends},
 	${misc:Depends},
 	${perl:Depends},
+	libdbi-perl,
+	libdbd-sqlite3-perl,
+	libwww-curl-perl,
 Description: The Purely Functional Package Manager
  Nix is a powerful package manager for Linux and other Unix systems that makes
  package management reliable and reproducible. It provides atomic upgrades and
